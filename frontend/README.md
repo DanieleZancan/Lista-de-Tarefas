@@ -1,50 +1,74 @@
-# React + TypeScript + Vite
+# Lista de Tarefas
+## Descrição
+Este é um projeto de uma aplicação de Lista de Tarefas, onde é possível cadastrar, editar, excluir e ordenar tarefas de acordo com o nome, custo e data limite. A aplicação é composta por:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Front-end: Desenvolvido utilizando React.
+### Back-end: API criada com Node.js e Express.
+### Banco de Dados: Utiliza um banco de dados MongoDB para persistência das tarefas.
+## Funcionalidades
+- Cadastrar novas tarefas com nome, custo e data limite.
+- Editar tarefas já cadastradas.
+- Excluir tarefas.
+- Ordenar as tarefas por nome, custo ou data limite.
+- Interface interativa e fácil de usar.
+## Tecnologias Utilizadas
+## Front-end:
 
-Currently, two official plugins are available:
+- React
+- React Hooks
+- React Icons (para os ícones de editar e excluir)
+## Back-end:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Node.js
+-Express
+## Banco de Dados:
 
-## Expanding the ESLint configuration
+- MongoDB (ou outro banco, conforme sua escolha)
+## Outras:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Axios (para fazer requisições HTTP)
+- dotenv (para variáveis de ambiente)
+- Cors (para permitir requisições entre diferentes origens)
 
-- Configure the top-level `parserOptions` property like this:
+# Como Rodar o Projeto
+## 1. Clonando o Repositório
+bash
+git clone https://github.com/DanieleZancan/Lista-de-Tarefas.git
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 2. Configurando o Backend
+1.Entre na pasta do backend:
+bash
+cd backend
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2.Instale as dependências:
+bash
+npm install
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3.Configure as variáveis de ambiente (crie um arquivo .env na raiz do diretório backend com as seguintes variáveis):
+env
+MONGO_URI=seu_link_do_mongo
+PORT=3333
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4.Inicie o servidor:
+bash
+npm start
+O back-end estará rodando na URL http://localhost:3333.
+
+## 3. Configurando o Frontend
+1.Entre na pasta do front-end:
+bash
+cd frontend
+
+2.Instale as dependências:
+bash
+npm install
+
+3.Inicie o front-end:
+bash
+npm start
+O front-end estará acessível em http://localhost:3333.
+
+## Estrutura de Pastas
+- frontend/: Contém a aplicação React (pasta do front-end).
+- backend/: Contém a API Express (pasta do back-end).
+- README.md: Este arquivo com instruções e informações sobre o projeto.

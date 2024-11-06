@@ -2,7 +2,7 @@
 ## Descrição
 Este é um projeto de uma aplicação de Lista de Tarefas, onde é possível cadastrar, editar, excluir e ordenar tarefas de acordo com o nome, custo e data limite. A aplicação é composta por:
 
-### Front-end: Desenvolvido utilizando React.
+### Front-end:## Desenvolvido utilizando React.
 ### Back-end: API criada com Node.js e Express.
 ### Banco de Dados: Utiliza um banco de dados MongoDB para persistência das tarefas.
 ## Funcionalidades
@@ -19,8 +19,8 @@ Este é um projeto de uma aplicação de Lista de Tarefas, onde é possível cad
 - React Icons (para os ícones de editar e excluir)
 ## Back-end:
 
--Node.js
--Express
+- Node.js
+- Express
 ## Banco de Dados:
 
 - MongoDB (ou outro banco, conforme sua escolha)
@@ -32,12 +32,12 @@ Este é um projeto de uma aplicação de Lista de Tarefas, onde é possível cad
 
 # Como Rodar o Projeto
 ## 1. Clonando o Repositório
-bash
+bash n/
 git clone https://github.com/DanieleZancan/Lista-de-Tarefas.git
 
 ## 2. Configurando o Backend
 1.Entre na pasta do backend:
-bash
+bash n/
 cd backend
 
 2.Instale as dependências:

@@ -1,5 +1,3 @@
-# Lista de Tarefas
-## Descrição
 # Lista de Tarefas  
 ## Descrição  
 Este é um projeto de uma aplicação de Lista de Tarefas, onde é possível cadastrar, editar, excluir e ordenar tarefas de acordo com o nome, custo e data limite. A aplicação é composta por:
